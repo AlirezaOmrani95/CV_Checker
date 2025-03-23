@@ -13,9 +13,9 @@ This script extracts information from your CV and a specific job and checks how 
 
 ## Installation
 1. **Clone the repository**:
-   `git clone https://github.com/AlirezaOmrani95/CV_Checker.git
-
-   cd CV_Checker`
+   ```bash
+   git clone https://github.com/AlirezaOmrani95/CV_Checker.git
+   cd CV_Checker
 
 3. **Install the dependencies**:
    `pip install -r requirements.txt`
