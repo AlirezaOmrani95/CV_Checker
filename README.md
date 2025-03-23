@@ -28,11 +28,11 @@ This script extracts information from your CV and a specific job and checks how 
 Once everything is set up, you can run the script to compare a CV against a job description.
 
 ### Command-line Arguments
---cv: Path to the CV file (can be a URL or local file). Accepts PDF, DOC/DOCX, XLS/XLSX, PPT/PPTX, and HWP/HWPX formats.
+`--cv`: Path to the CV file (can be a URL or local file). Accepts PDF, DOC/DOCX, XLS/XLSX, PPT/PPTX, and HWP/HWPX formats.
 
---learn_mode: Choose between zero-shot or one-shot learning modes.
+`--learn_mode`: Choose between `zero-sho`t or `one-shot` learning modes.
 
---model_type: Select the model to use. For example, `google/gemma-3-27b-it:free` or any other model listed in the free_model_names.txt file.
+`--model_type`: Select the model to use. For example, `google/gemma-3-27b-it:free` or any other model listed in the `free_model_names.txt` file.
 
 ### Example Command
 ```bash
@@ -52,11 +52,14 @@ This command will analyze the CV against the job description using the specified
 
 - **README.md**: Documentation for the repository.
 
+## Model Options
+The available models for comparison are listed in the `free_model_names.txt` file. You can choose any model from the list when running the script.
+
 ## Notes
 - To use the script you need an API key, which you can create for free by registering on [the Openrouter website](www.openrouter.ai).
 - Make sure your CV file is accessible and in one of the accepted formats.
-- The learn_mode option determines whether the model will use zero-shot or one-shot learning. One-shot generally provides better results but requires an example. So, you can change the examples in **examples.json file** based on your field.
-- If you would like to use Few-shot learning, you must include more examples in the **examples.json file**. **You need to be careful because if the length of the input text is too big (bigger than the model can handle), an error will occur.**
+- The `learn_mode` option determines whether the model will use zero-shot or one-shot learning. One-shot generally provides better results but requires an example. So, you can change the examples in `examples.json` file based on your field.
+- If you would like to use Few-shot learning, you must include more examples in the `examples.json` file. **You need to be careful because if the length of the input text is too big (bigger than the model can handle), an error will occur.**
 
 ## Contact
 If you have any questions or suggestions, feel free to open an issue on GitHub or contact me at Omrani.alireza95@gmail.com.
