@@ -246,7 +246,7 @@ def json_loader(file_address):
 
 if __name__ == '__main__':
     args = parse_argument()
-    API_Key = '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'
+    API_Key = 'Insert Your API key Here'
     api_url = 'https://openrouter.ai/api/v1'
     learning_mode = args.learn_mode
 
