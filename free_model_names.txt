@@ -45,4 +45,4 @@ nousresearch/deephermes-3-llama-3-8b-preview:free
 cognitivecomputations/dolphin3.0-r1-mistral-24b:free
 cognitivecomputations/dolphin3.0-mistral-24b:free
 microsoft/phi-3-mini-128k-instruct:free
-microsoft/phi-3-medium-128k-instruct:free]
+microsoft/phi-3-medium-128k-instruct:free
