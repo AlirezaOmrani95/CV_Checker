@@ -13,11 +13,11 @@ This script extracts information from your CV and a specific job and checks how 
 
 ## Installation
 1. **Clone the repository**:
-   'git clone https://github.com/AlirezaOmrani95/CV_Checker.git
-   cd CV_Checker'
+   `git clone https://github.com/AlirezaOmrani95/CV_Checker.git
+   cd CV_Checker`
 
 2. **Install the dependencies**:
-   'pip install -r requirements.txt'
+   `pip install -r requirements.txt`
 
 ## Usage
 ### Running the Script
@@ -28,10 +28,10 @@ Once everything is set up, you can run the script to compare a CV against a job 
 
 --learn_mode: Choose between zero-shot or one-shot learning modes.
 
---model_type: Select the model to use. For example, google/gemma-3-27b-it:free or any other model listed in the free_model_names.txt file.
+--model_type: Select the model to use. For example, `google/gemma-3-27b-it:free` or any other model listed in the free_model_names.txt file.
 
 ### Example Command
-'python CV_checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free'
+`python CV_checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free`
 
 This command will analyze the CV against the job description using the specified model and learning mode.
 
