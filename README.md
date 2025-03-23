@@ -37,3 +37,4 @@ Once everything is set up, you can run the script to compare a CV against a job 
    ```bash
    python CV_checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free
 
+This command will analyze the CV against the job description using the specified model and learning mode.
