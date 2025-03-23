@@ -20,6 +20,7 @@ This script extracts information from your CV and a specific job and checks how 
 3. **Install the dependencies**:
    `pip install -r requirements.txt`
 
+
 ## Usage
 ### Running the Script
 Once everything is set up, you can run the script to compare a CV against a job description.
