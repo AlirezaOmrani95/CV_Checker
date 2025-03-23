@@ -48,7 +48,7 @@ This command will analyze the CV against the job description using the specified
 - **README.md**: Documentation for the repository.
 
 ## Notes
-- To use the script you need an API key, which you can create for free by registering on [openrouter](www.openrouter.ai).
+- To use the script you need an API key, which you can create for free by registering on [the Openrouter website](www.openrouter.ai).
 - Make sure your CV file is accessible and in one of the accepted formats.
 - The learn_mode option determines whether the model will use zero-shot or one-shot learning. One-shot generally provides better results but requires an example. So, you can change the examples in **examples.json file** based on your field.
 
