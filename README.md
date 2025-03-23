@@ -18,7 +18,8 @@ This script extracts information from your CV and a specific job and checks how 
    cd CV_Checker
 
 3. **Install the dependencies**:
-   `pip install -r requirements.txt`
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage
 ### Running the Script
@@ -53,6 +54,7 @@ This command will analyze the CV against the job description using the specified
 - To use the script you need an API key, which you can create for free by registering on [the Openrouter website](www.openrouter.ai).
 - Make sure your CV file is accessible and in one of the accepted formats.
 - The learn_mode option determines whether the model will use zero-shot or one-shot learning. One-shot generally provides better results but requires an example. So, you can change the examples in **examples.json file** based on your field.
+- If you would like to use Few-shot learning, you must include more examples in the **examples.json file**. **You need to be careful because if the length of the input text is too big (bigger than the model can handle), an error will occur.**
 
 ## Contact
 If you have any questions or suggestions, feel free to open an issue on GitHub or contact me at Omrani.alireza95@gmail.com.
