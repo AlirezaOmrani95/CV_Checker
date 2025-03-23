@@ -37,26 +37,3 @@ Once everything is set up, you can run the script to compare a CV against a job 
    ```bash
    python CV_checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free
 
-This command will analyze the CV against the job description using the specified model and learning mode.
-
-## Files in this Repository
-
-- **CV_checker.py**: Main script to compare CVs with job descriptions using LLM models.
-
-- **requirements.txt**: List of required Python packages.
-
-- **examples.json**: Example for one-shot learning.
-
-- **free_model_names.txt**: A list of available free models.
-
-- **README.md**: Documentation for the repository.
-
-## Notes
-- To use the script you need an API key, which you can create for free by registering on [the Openrouter website](www.openrouter.ai).
-- Make sure your CV file is accessible and in one of the accepted formats.
-- The learn_mode option determines whether the model will use zero-shot or one-shot learning. One-shot generally provides better results but requires an example. So, you can change the examples in **examples.json file** based on your field.
-- If you would like to use Few-shot learning, you must include more examples in the **examples.json file**. **You need to be careful because if the length of the input text is too big (bigger than the model can handle), an error will occur.**
-
-## Contact
-If you have any questions or suggestions, feel free to open an issue on GitHub or contact me at Omrani.alireza95@gmail.com.
-
