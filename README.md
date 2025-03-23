@@ -16,11 +16,12 @@ This script extracts information from your CV and a specific job and checks how 
    ```bash
    git clone https://github.com/AlirezaOmrani95/CV_Checker.git
    cd CV_Checker
+   ```
 
 3. **Install the dependencies**:
    ```bash
    pip install -r requirements.txt
-
+   ```
 
 ## Usage
 ### Running the Script
