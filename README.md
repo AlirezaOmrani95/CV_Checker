@@ -18,10 +18,20 @@ This script extracts information from your CV and a specific job and checks how 
    cd CV_Checker
    ```
 
-3. **Install the dependencies**:
+2. **Install the dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
+
+3. **Playwright install**:
+   - For **Windows**:
+     ```bash
+     playwright install
+     ```
+   - For **Ubuntu**:
+     ```bash
+     sudo apt-get install libgstreamer-plugins-bad1.0-0
+     ```
 
 ## Usage
 ### Running the Script
@@ -36,7 +46,7 @@ Once everything is set up, you can run the script to compare a CV against a job 
 
 ### Example Command
 ```bash
-python CV_checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free
+python CV_Checker.py --cv cv.pdf --learn_mode one-shot --model_type google/gemma-3-27b-it:free
 ```
 This command will analyze the CV against the job description using the specified model and learning mode.
 

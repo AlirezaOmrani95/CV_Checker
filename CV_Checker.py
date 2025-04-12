@@ -265,11 +265,14 @@ if __name__ == '__main__':
     #Extracting info from the CV
     cv_address = args.cv
     
-    if not os.path.exists(cv_address): #If the address is a URL, it first downloads and then load the file.
+    if cv_address.startswith("http://") or cv_address.startswith("https://"):
         response = requests.get(cv_address)
         cv_address = cv_address.split('/')[-1]
         with open(cv_address, 'wb') as f:
             f.write(response.content)
+    elif not os.path.exists(cv_address):
+        print(f"The file {cv_address} does not exist.")
+        quit()
     
     print('\nParsing the information from the CV...')
     my_cv = pymupdf4llm.to_markdown(cv_address) #Extracting information from the CV using an LLM model 
